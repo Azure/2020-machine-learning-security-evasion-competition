@@ -36,6 +36,11 @@ Before you proceed, you must [install Docker Engine](https://docs.docker.com/eng
 
 A sample solution that you may modify is included in the `defender` folder. (See the [FAQ](FAQ.md#the-example-solution) for an overview of the example solution.) 
 
+Install Python requirements needed to test the solution:
+```
+pip install -r requirements.txt
+```
+
 From the `defender` folder that contains the `Dockerfile`, build the solution:
 ```
 docker build -t ember .
