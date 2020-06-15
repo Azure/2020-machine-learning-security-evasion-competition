@@ -60,7 +60,7 @@ A sure way to submit a valid solution is to modify the example Python code and D
     + Your Python class must include a `predict` method that [returns an integer](defender/defender/models/ember_model.py#L30-L32): `0` for benign and `1` for malicious.  (The code will appropriately wrap this result in a JSON response.)
 2. In [defender/\_\_main\_\_.py](defender/__main__.py), [import your new model](defender/__main__.py#L5-L6), [instantiate your model](defender/__main__.py#L20-L25), and [include it in your app](defender/__main__.py#L27) via `app = create_app(model)`.
     + Tip: you may choose to [pass some model parameters](defender/__main__.py#L10-L14) (e.g., model file, threshold) via environmental variables so that you can tune these in the Dockerfile (faster builds!) rather than in the Python code.
-3. Make sure to update [requirements.txt](requirements.txt) with any Python dependencies that you `import`ed when writing your code.
+3. Make sure to update [docker-requirements.txt](docker.requirements.txt) with any Python dependencies that you `import`ed when writing your code.
 4. Modify the [Dockerfile](Dockerfile) to install any addiitonal binary dependencies.
 5. Build your docker image using `docker build -t mydefender .` from the directory containing `DOCKERFILE`.  It is recommended that your registered username at [https://mlsec.io](https://mlsec.io) is consistent with the name of your docker image (i.e., change `mydefender` to your username).
 6. Run your docker image using `docker run -itp 8080:8080 --memory=1.5g --cpus=1 mydefender`

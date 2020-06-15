@@ -3,5 +3,3 @@ flask>=1.1.2
 gevent>=1.4.0
 envparse
 annoy
-numpy
-tqdm
