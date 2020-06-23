@@ -54,7 +54,7 @@ docker run -itp 8080:8080 ember
 
 Test the solution on malicious and benign samples of your choosing via:
 ```
-python -m defender.test -m MLSEC_2019_samples_and_variants.zip -b C:\Windows\System32\ 
+python -m test -m MLSEC_2019_samples_and_variants.zip -b C:\Windows\System32\ 
 ```
 Sample collections may be in a folder, or in an archive of type `zip`, `tar`, `tar.bz2`, `tar.gz` or `tgz`.  `MLSEC_2019_samples_and_variants.zip` contains malware and evasive submissions from the 2019 evasion competition and may be downloaded from [https://mlsec.io/](https://mlsec.io) after registering or logging in.  **It is not required to unzip and strongly recommended that you do not unzip the archive to test malicious samples.** 
 
