@@ -1,3 +1,5 @@
+# Frequently Asked Questions
+
 <!-- vscode-markdown-toc -->
 * [How does the sample `attacker` solution work?](#how-does-the-sample-`attacker`-solution-work?)
 * [Can I use adversarial ML toolboxes?](#can-i-use-adversarial-ml-toolboxes?)
@@ -8,7 +10,6 @@
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-# Frequently Asked Questions
 
 ## <a name='how-does-the-sample-`attacker`-solution-work?'></a>How does the sample `attacker` solution work?
 The [example solution](attacker/__main__.py) contains code that produces evasive variants. However, it is possible that
