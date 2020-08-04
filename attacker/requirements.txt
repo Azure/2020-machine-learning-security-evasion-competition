@@ -1,0 +1,8 @@
+tqdm
+lightgbm
+lief
+hyperopt
+annoy
+click
+requests
+-e git+https://github.com/endgameinc/ember.git#egg=ember
