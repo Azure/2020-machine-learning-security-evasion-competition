@@ -1,16 +1,16 @@
 <!-- vscode-markdown-toc -->
-* 1. [How does the sample `attacker` solution work?](#how-does-the-sample-`attacker`-solution-work?)
-* 2. [Can I use adversarial ML toolboxes?](#can-i-use-adversarial-ml-toolboxes?)
+* [How does the sample `attacker` solution work?](#how-does-the-sample-`attacker`-solution-work?)
+* [Can I use adversarial ML toolboxes?](#can-i-use-adversarial-ml-toolboxes?)
 
 <!-- vscode-markdown-toc-config
-	numbering=true
+	numbering=false
 	autoSave=true
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
 # Frequently Asked Questions
 
-##  1. <a name='how-does-the-sample-`attacker`-solution-work?'></a>How does the sample `attacker` solution work?
+## <a name='how-does-the-sample-`attacker`-solution-work?'></a>How does the sample `attacker` solution work?
 The [example solution](attacker/__main__.py) contains code that produces evasive variants. However, it is possible that
 1. some of the samples produced may not be functional afterall, or
 2. no evasive variant is discovered for a set of samples.
@@ -36,7 +36,7 @@ For the optimization, we use the [Tree of Parzen estimators (TPE)](https://paper
   - Additionally, we include in the average the _score_ of a barebones [ember](https://github.com/endgameinc/ember) model, so that the objective function outputs a number between zero and one.
 
 
-##  2. <a name='can-i-use-adversarial-ml-toolboxes?'></a>Can I use adversarial ML toolboxes?
+## <a name='can-i-use-adversarial-ml-toolboxes?'></a>Can I use adversarial ML toolboxes?
 Short answer: Maybe! Black-box approaches are the appropriate, but be aware that many were designed for images, with norm constraints on the input that may not be suitable for malware.
 
 The [Adversarial Robustness Toolbox](https://github.com/Trusted-AI/adversarial-robustness-toolbox) includes a number of [black-box attacks](https://github.com/Trusted-AI/adversarial-robustness-toolbox/wiki/ART-Attacks#12-black-box). The implementation and constraints in these attacks are primarily tailored for attacking image models.
