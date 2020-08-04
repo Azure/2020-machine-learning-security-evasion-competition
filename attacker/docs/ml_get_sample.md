@@ -18,12 +18,11 @@ Retrieve resuts from sample submission, referenced by `jobid`
 ```json
 {
     "model1": {
-        "result": model1_result
+        "result": 0
     },
     "model2": {
-        "result": model2_result
-    },
-    ...
+        "result": 1
+    }
 }
 ```
 
