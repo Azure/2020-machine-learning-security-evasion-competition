@@ -89,6 +89,7 @@ python -m attacker.attacker run --config config.pkl --samples online_pass1/failu
 ```
 
 **Manual manipulations and testing**
+
 One may use this process to collect a subset of samples that evade one more more hosted machine learning models.  Additional steps that should be done manually include the following:
 1. additional modifications to samples that do not yet evade all three machine learning models
 2. validate that the generated samples maintain functionality when run in a Windows 10 sandbox
