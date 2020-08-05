@@ -30,7 +30,10 @@ A valid submission for the attacker challenge consists of the following:
 ## <a name='sample-solution'></a>Sample solution
 <span style="color:red">**Only run this sample solution on a Linux virtual machine. It will write novel, functional malware samples to disk.**</span>
 
-Watch a [demo video](https://drive.google.com/file/d/1ttCSGbwjNd2TpIF4SK6IznhArArRPRoX/view) of the example solution for more context.
+Watch a demo video of the example solution for more context:
+
+[![Demo video](http://img.youtube.com/vi/K8GwCDAaV4k/0.jpg)](http://www.youtube.com/watch?v=K8GwCDAaV4k)
+
 
 The example solution is intended to simplify creating evasive malware samples that are functional using a semi-automated process.  After running this solution, it is possible that
 1. some of the samples produced may not be functional afterall, or
