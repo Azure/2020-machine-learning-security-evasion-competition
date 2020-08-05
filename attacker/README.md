@@ -5,7 +5,7 @@
     * [Rules / Terms](#rules-/-terms)
     * [Requirements](#requirements)
 * [Sample solution](#sample-solution)
-* [Reference](#reference)
+* [Resources](#resources)
 
 <!-- vscode-markdown-toc-config
 	numbering=false
@@ -100,7 +100,7 @@ One may use this process to collect a subset of samples that evade one more more
 5. repeat this process as needed
 
 
-## <a name='reference'></a>Reference
+## <a name='resources'></a>Resources
 For additional questions, the following resources are available:
 * [REST API Interface](docs/API.md) API documentation for submitting samples and uploading ZIP files
 * [Frequently Asked Questions](FAQ.md) markdown file with solutions to common problems
