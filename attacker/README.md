@@ -30,11 +30,6 @@ A valid submission for the attacker challenge consists of the following:
 ## <a name='sample-solution'></a>Sample solution
 <span style="color:red">**Only run this sample solution on a Linux virtual machine. It will write novel, functional malware samples to disk.**</span>
 
-Watch a demo video of the example solution for more context:
-
-[![Demo video](http://img.youtube.com/vi/K8GwCDAaV4k/0.jpg)](http://www.youtube.com/watch?v=K8GwCDAaV4k)
-
-
 The example solution is intended to simplify creating evasive malware samples that are functional using a semi-automated process.  After running this solution, it is possible that
 1. some of the samples produced may not be functional afterall, or
 2. no evasive variant is discovered for a set of samples.
@@ -54,7 +49,7 @@ pip install -r attacker/requirements.txt
 
 **Initialize the attack**
 
-In the example attack, PE file contest is extracted from a list of benign files that you provide.  You must also provide the `api_token` obtained from [https://mlsec.io/myuser](https://mlsec.io/myuser/).  From the root folder, run
+In the example attack, PE file content is extracted from a list of benign files that you provide.  You must also provide the `api_token` obtained from [https://mlsec.io/myuser](https://mlsec.io/myuser/).  From the root folder, run
 ```
 python -m attacker.attacker init --benign ~/data/benign/ --api_token 0123456789abcdef0123456789abcdef -o config.pkl
 ```
@@ -92,6 +87,17 @@ As above, this process can be repeated for failed samples:
 ```
 python -m attacker.attacker run --config config.pkl --samples online_pass1/failure --success_out online_pass2/success --failure_out online_pass2/failure --max-evals 10 --online
 ```
+
+**Manual manipulations and testing**
+One may use this process to collect a subset of samples that evade one more more hosted machine learning models.  Additional steps that should be done manually include the following:
+1. additional modifications to samples that do not yet evade all three machine learning models
+2. validate that the generated samples maintain functionality when run in a Windows 10 sandbox
+3. collect completed set into a ZIP file and upload at [https://mlsec.io/zipfile](https://mlsec.io/zipfile)
+   - only one ZIP upload per 60 minutes is allowed per user
+   - one should validate that the submitted samples are _still_ evasive--the hosted machine learning models may have changed state since the time of initial discovery
+4. analyze samples that do not pass one or more of the validation steps
+5. repeat this process as needed
+
 
 ## <a name='reference'></a>Reference
 For additional questions, the following resources are available:
