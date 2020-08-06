@@ -20,7 +20,7 @@ Retrieve resuts from sample submission, referenced by `jobid`
 * [ml_get_sample](ml_get_sample.md): `GET https://api.mlsec.io/api/ml_get_sample?api_token={api_token}&jobid={jobid}`
 
 ## <a name='upload-zip-files-and-check-on-status'></a>Upload ZIP files and check on status
-Rather than using these API routes, you may submit and view the status of your submission at [https://mlsec.io/zipfile](https://mlsec.io/zipfile/).
+**Rather than using these API routes, you may submit and view the status of your submission at [https://mlsec.io/zipfile](https://mlsec.io/zipfile/).**
 
 Upload a ZIP file containing samples
 * [post_one_zip](post_one_zip.md): `POST https://api.mlsec.io/api/post_one_zip/new/?url=%2Fzipfile%2F&api_token={api_token}`
